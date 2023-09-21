@@ -29,8 +29,6 @@ main()
             scanf("%s", &str1);
             printf("Enter str2 for comparision with str1: ");
             scanf("%s", &str2);
-
-            // strcmp(str1, str2) == 1 ? printf("Equal") : printf("Not equal");
             if (strcmp(str1, str2) == 0)
             {
                 printf("Both are equal");
@@ -73,7 +71,14 @@ main()
             scanf("%s", &str1);
             strcpy(str2, str1);
             strrev(str2);
-            !strcmp(str1, str2) ? printf("Palidrome") : printf("Not palidrome");
+            if (strcmp(str1, str2) == 0)
+            {
+                printf("Palidrome");
+            }
+            else
+            {
+                printf("Not palidrome");
+            }
             break;
 
         case 7:
